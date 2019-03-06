@@ -367,7 +367,7 @@ body{
     background-color: #171717 !important;
 }
 .thing .title {
-      color:#ab0000 !important;
+      color:#716fce !important;
 }
 
 .info a {
@@ -382,13 +382,13 @@ body{
 }
 .info a:hover {
 	margin-left:4px;
-	color:#738a99;
+	color:#716fce;
 }
 span.red {
-	color:#c45d69;
+	color:#716fce;
 }
 span.green {
-	color:#61bd68;
+	color:#716fce;
 }
 /****************************** HOME - Content Part - Box Two ******************************/
 .quote {
@@ -458,10 +458,10 @@ span.green {
 	transition: opacity 1s linear;
 }
 .boxthree h3 {
-	border-bottom:1px solid #d2dbe2;
+	border-bottom:1px solid #716fce;
 }
 a.simple {
-	color:black;
+	color:#716fce;
 	font-size:11px;
 }
 /****************************** HOME - Content Part - Footer ******************************/
