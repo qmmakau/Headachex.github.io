@@ -15,21 +15,21 @@ div.line {
 div.sepContainer {
 	height: 4px;
 	background:black;
-	border-left:20px solid #bfd6e4;
+	border-left:20px solid #171717;
 	display: block;
 	margin: 20px 0;
 }
 div.sepContainer1 {
 	height: 4px;
 	background:black;
-	border-left:20px solid #bfd6e4;
+	border-left:20px solid #171717;
 	display: block;
 	margin: 10px 0 30px 0;
 }
 div.sepContainer2 {
 	height: 4px;
 	background:black;
-	border-left:20px solid #bfd6e4;
+	border-left:20px solid #171717;
 	display: block;
 	margin: 5px 0;
 }
@@ -68,7 +68,7 @@ div.blankSeparator2 {
 #header {
 	background:tansparent;
 	margin-top:0px;
-	border-bottom:1px solid #6d8696;
+	border-bottom:1px solid #171717;
 }
 .logo {
 	float: left;
@@ -147,7 +147,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover { /* visited pseudo selector so IE6 applies text colour*/
 	background: rgba(215, 234, 238, 0.3);
-	border-top:2px solid #fff;
+	border-top:2px solid #24262d;
 }
 .sf-menu li a {
 	font-family: Arial, Helvetica, sans-serif;
@@ -163,7 +163,7 @@ li a#visited {
 }
 /*** submenu ***/
 .sf-menu li ul {
-	border-bottom:5px solid #bfd6e4;
+	border-bottom:5px solid #171717;
 	margin-top:75px;
 }
 .sf-menu ul li { /* visited pseudo selector so IE6 applies text colour*/
@@ -239,7 +239,7 @@ span.home {
 	padding: 0;
 	background:black;
 	border-top:1px solid #efefef;
-	border-bottom:5px solid #89a2b2;
+	border-bottom:5px solid #171717;
 }
 .flexslider .slides > li {
 	display: none;
@@ -458,17 +458,17 @@ span.green {
 	transition: opacity 1s linear;
 }
 .boxthree h3 {
-	border-bottom:1px solid #716fce;
+	border-bottom:1px solid #171717;
 }
 a.simple {
-	color:#716fce;
+	color:#171717;
 	font-size:11px;
 }
 /****************************** HOME - Content Part - Footer ******************************/
 #footer {
 	background:black;
 	padding:20px 0px;
-	border-top:5px solid #bfd6e4;
+	border-top:5px solid #171717;
 }
 .footer p {
 	color:white;
@@ -502,7 +502,7 @@ a.simple {
 }
 .footer ul li {
 	color:#f1f2f2;
-	border-top:1px solid #787f94;
+	border-top:1px solid #171717;
 	border-bottom:1px solid #494d5a;
 	padding:5px 0;
 }
@@ -594,7 +594,7 @@ ul.socials li {
 .portfolio .flexslider {
 	margin: 0px 0 30px 0;
 	padding: 5px;
-	background:#fff;
+	background:#24262d;
 	border:1px solid #efefef;
 }
 .portfolio h2 {
@@ -607,7 +607,7 @@ ul.socials li {
 }
 p.portfolio {
 	margin-top:25px;
-	background:#fff;
+	background:#24262d;
 	border:1px solid #efefef;
 	padding:5px;
 }
@@ -703,7 +703,7 @@ ul.tabs li a.active {
 	position: relative;
 	top: 0px;
 	margin: 0 0 0 0px;
-	color: #fff;
+	color: #24262d;
 }
 ul.tabs li:first-child a.active {
 	margin-left: 0;
@@ -795,8 +795,8 @@ li#beauty, li#woman, li#people {
 .post {
 	margin-bottom:40px;
 	padding:10px;
-	background:#fff;
-	border:1px solid #efefef;
+	background:#24262d;
+	border:1px solid #171717;
 	opacity: 1;
 	filter: alpha(opacity=100);
 	-webkit-transition: opacity 0.5s linear;
@@ -834,7 +834,7 @@ li#beauty, li#woman, li#people {
 }
 span.left {
 	padding:0 10px;
-	border-right:1px solid #fff;
+	border-right:1px solid #24262d;
 }
 .blog h4 {
 	font-style:italic;
@@ -847,8 +847,8 @@ span.left {
 }
 /***************** Blog/Sidebar *****************/
 .sidebar h3 {
-	background:#bfd6e4;
-	border:1px solid #fff;
+	background:#000000;
+	border:1px solid #24262d;
 	padding:5px;
 }
 ul.blogList a.about {
@@ -864,7 +864,7 @@ ul.blogList a.about:hover {
 }
 ul.blogList li {
 	padding: 10px 20px;
-	border-bottom:1px solid #fff;
+	border-bottom:1px solid #24262d;
 	background: url(../images/raster.png) left no-repeat;
 }
 li.activenavigationItem {
@@ -889,7 +889,7 @@ li.activenavigationItem:hover {
 }
 span.color {
 	background:#c45d69;
-	color:#fff;
+	color:#24262d;
 	padding:5px;
 	font-weight:bold;
 }
@@ -897,7 +897,7 @@ span.color {
 .postone {
 	margin-bottom:40px;
 	padding:10px;
-	background:#fff;
+	background:#24262d;
 	border:1px solid #efefef;
 	opacity: 1;
 	filter: alpha(opacity=100);
@@ -908,7 +908,7 @@ span.color {
 	transition: opacity 0.5s linear;
 }
 .singleblog img {
-	background:#bfd6e4;
+	background:#171717;
 	padding:10px;
 	margin-left:-10px;
 	margin-bottom:10px;
@@ -973,7 +973,7 @@ div.commentMeta p {
 	padding: 0 10px 0 0;
 }
 img.user {
-	background:#fff;
+	background:#24262d;
 	border:1px solid #dcdcdc;
 	padding:5px;
 }
@@ -984,7 +984,7 @@ div.commentBody {
 	margin: 0px 0 20px 140px;
 }
 div.commentBody h3 {
-	background-color:#bfd6e4;
+	background-color:#171717;
 	padding:5px;
 	font-size: 14px;
 	margin-top:-10px;
@@ -1017,14 +1017,14 @@ div#comments a.buttonLink {
 	margin-top:30px;
 }
 .resume .one_third {
-	background:#bfd6e4;
-	border-bottom:2px solid #fff;
+	background:#171717;
+	border-bottom:2px solid #24262d;
 }
 .resume .one_third h3 {
 	padding:10px;
 }
 .resume .two_third {
-	background:#fff;
+	background:#24262d;
 }
 .resume .two_third p {
 	padding:10px;
@@ -1121,13 +1121,13 @@ form#contact_form input[type="submit"] {
 	transition: all 0.3s ease-in-out;
 }
 form#contact_form input[type="submit"]:hover {
-	color:#bfd6e4;
+	color:#000000;
 }
 .map-container {
 	position: relative;
 	padding-bottom: 20%;
 	overflow: hidden;
-	border-bottom:5px solid #fff;
+	border-bottom:5px solid #24262d;
 }
 .map-container iframe, .map-container object, .map-container embed {
 	position: absolute;
@@ -1141,8 +1141,8 @@ form#contact_form input[type="submit"]:hover {
 }
 /***************** Contact/Sidebar *****************/
 .contactsidebar h3 {
-	background:#bfd6e4;
-	border:1px solid #fff;
+	background:#000000;
+	border:1px solid #24262d;
 	padding:5px;
 }
 ul.contactsidebarList a.about {
@@ -1159,7 +1159,7 @@ ul.contactsidebarList a.about:hover {
 ul.contactsidebarList li {
 	color:#414558;
 	padding: 10px 20px;
-	border-bottom:1px solid #fff;
+	border-bottom:1px solid #24262d;
 	background: url(../images/raster.png) left no-repeat;
 }
 .second, .third {

@@ -1,0 +1,6 @@
+body{
+    background-color: #171717 !important;
+}
+.thing .title {
+      color:#716fce !important;
+}
