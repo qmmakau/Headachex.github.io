@@ -1,24 +1,37 @@
-var playerCurrentlyPlaying = null;
-function chain(){       
-    $('.post').each(function(){
-        var player_id = $(this).children('iframe').attr("id");
-        player = new YT.Player( player_id, { 
-            events:
-                {      
-                'onStateChange': function (event) 
-                    {
-
-                    if (event.data == YT.PlayerState.PLAYING) 
-                        { 
-                          if(playerCurrentlyPlaying != null && 
-                          playerCurrentlyPlaying != player_id)
-                          callPlayer( playerCurrentlyPlaying , 'pauseVideo' );
-                          playerCurrentlyPlaying = player_id;
-
-                        }            
-
+ function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    events: {
+                        'onStateChange': onPlayerStateChange
                     }
-                }        
-        });
-    });
-}
+                });
+                player1 = new YT.Player('player1', {
+                    events: {
+                        'onStateChange': onPlayerStateChange1
+                    }
+                });
+                player2 = new YT.Player('player2', {
+                    events: {
+                        'onStateChange': onPlayerStateChange2
+                    }
+                });
+        
+            }
+            onYouTubeIframeAPIReady();
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING ) {
+                    player1.stopVideo();
+                    player2.stopVideo();
+                }
+            }
+            function onPlayerStateChange1(event) {
+                if (event.data == YT.PlayerState.PLAYING ) {
+                    player.stopVideo();
+                    player2.stopVideo();
+                }
+            }
+            function onPlayerStateChange2(event) {
+                if (event.data == YT.PlayerState.PLAYING ) {
+                    player.stopVideo();
+                    player1.stopVideo();
+                }
+            }
