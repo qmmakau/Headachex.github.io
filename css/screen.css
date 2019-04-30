@@ -806,7 +806,7 @@ li#beauty, li#woman, li#people {
 	transition: opacity 0.5s linear;
 }
 .blog img {
-	background:#bfd6e4;
+	background:TRANSPARENT;
 	padding:10px;
 	margin-left:-10px;
 	margin-bottom:10px;
