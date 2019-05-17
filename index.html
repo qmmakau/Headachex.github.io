@@ -1,14 +1,10 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
+<html>
 
-
+	<head>
+	
+	
+	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137688432-1"></script>
 <script>
@@ -57,9 +53,74 @@
 <!-- Google Fonts ==================================================
 ================================================== -->
 
-</head>
-<body>
+	
+	
+	
+	
+	
+	
+		<meta charset="UTF-8">
+		<title>MediaElement Playlist Plugin for Video and Audio Tag</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="demo/stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="demo/stylesheets/pygment_trac.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="demo/stylesheets/print.css" media="print">
+
+		<!-- jQuery and MediaElement.js -->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="lib/mediaelement/mediaelement-and-player.js"></script>
+		<link type="text/css" rel="stylesheet" href="lib/mediaelement/mediaelementplayer.css">
+
+		<!-- MediaElement Playlist Plugin -->
+		<script type="text/javascript" src="build/mediaelement-playlist-plugin.js"></script>
+		<link type="text/css" rel="stylesheet" href="build/mediaelement-playlist-plugin.css">
+
+		<style>
+			/* these are totally optional */
+
+			/* hides focus marker around control buttons */
+			.mejs-controls .mejs-button button:focus {
+				outline: none;
+			}
+
+			/* replace svg with our png - chrome 36 has issues with bg position and svg (play arrow invisible) */
+			.mejs-overlay-button {
+				background-image: url(build/bigplay.png);
+			}
+
+			/* makes loader bg transparent, not black, we also supply a different loading gif in _demo/ */
+			.mejs-overlay-loading {
+				background: none;
+			}
+
+		</style>
+	</head>
+
+	<body>
+	
+
+<!-- my body from gallery + home ====================================================================   -->
+<div class="flexslider">
+  <ul class="slides">
+    <li> <a href="#"><img src="images/flexslider/3.jpg" alt=""/></a> </li>
+    <li> <img src="images/flexslider/6.jpg" alt="" /> </li>
+    <li> <a href="#"><img src="images/flexslider/4.jpg" alt="" /></a>
+      <p class="flex-caption">Cancel your Headach from our music.</p>
+    </li>
+  </ul>
+</div>
+
+<!-- my body from gallery + home ====================================================================   -->
+
+
+
+
+
+
+	
+	
 <!-- Home - Content Part ==================================================================================================== -->
 
 <div id="header">
@@ -95,200 +156,103 @@
   </div>
 </div>
 
-
-
-
 <div class="blankSeparator1"></div>
+	<div id="container">
+
+		<div class="inner">
+
+        
+		<!-- 
+		reminder: video tag standard attribute values: 
+		- preload:  "", "none", "metadata", "auto"
+		- loop:     "", "loop"
+		- autoplay: "", "autoplay"
+		- controls: "", "controls"
+
+		mep additional attribute values:
+		- data-showplaylist: "", "true" (shows playlist initially or not if empty or "false")
+		-->
+
+				<div>
 
 
+		<h2>Audio playlist</h2>
+		<audio
+			class="mep-playlist"
+			data-showplaylist="true"
 
+			controls="controls"
+			preload="auto"
+			style="max-width: 100%;"
+			>
 
-<div class="container portfolio4columns">
-  
-    
-    
-  
-  
-  
-  
-<!--beat start ================================================================================================================================================ -->
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/Forward.mp3" title="RSF - Forward" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/forward_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-Earth.mp3" title="Luca Francini - Earth" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-Earth_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-EarthRemix.mp3" title="Luca Francini - Earth (Aly Elmasry Remix)" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-EarthRemix_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/mother.mp3" title="Vaporia - To Mother" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/to-mother_artwork.jpg" type="audio/mpeg"/>
+                        <source src="https://raw.githubusercontent.com/portablejim/example-media/master/Forward.mp3" title="RSF - Forward" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/forward_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-Earth.mp3" title="Luca Francini - Earth" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-Earth_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-EarthRemix.mp3" title="Luca Francini - Earth (Aly Elmasry Remix)" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-EarthRemix_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/mother.mp3" title="Vaporia - To Mother" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/to-mother_artwork.jpg" type="audio/mpeg"/>
+                        <source src="https://raw.githubusercontent.com/portablejim/example-media/master/Forward.mp3" title="RSF - Forward" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/forward_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-Earth.mp3" title="Luca Francini - Earth" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-Earth_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-EarthRemix.mp3" title="Luca Francini - Earth (Aly Elmasry Remix)" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/LucaFrancini-EarthRemix_cover.jpg" type="audio/mpeg"/>
+			<source src="https://raw.githubusercontent.com/portablejim/example-media/master/mother.mp3" title="Vaporia - To Mother" data-poster="https://raw.githubusercontent.com/portablejim/example-media/master/to-mother_artwork.jpg" type="audio/mpeg"/>
 
+		</audio>
 
+		
+		<script>
+			$(function () {
 
+				// both video playlists(regular and slider)
+				$('video.mep-playlist').mediaelementplayer({
+					"features": ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'current', 'progress', 'duration', 'volume', 'playlist', 'fullscreen'],
+					"shuffle": false,
+					"loop": false,
+					"aspectratio": "16:9"
+				});
 
-<!-- my body from gallery + home ====================================================================   -->
-<div class="flexslider">
-  <ul class="slides">
-    <li> <a href="#"><img src="images/flexslider/3.jpg" alt=""/></a> </li>
-    <li> <img src="images/flexslider/6.jpg" alt="" /> </li>
-    <li> <a href="#"><img src="images/flexslider/4.jpg" alt="" /></a>
-      <p class="flex-caption">Cancel your Headach from our music.</p>
-    </li>
-  </ul>
-</div>
+				// audio playlist
+				$('audio.mep-playlist').mediaelementplayer({
+					"features": ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'current', 'progress', 'duration', 'volume', 'playlist', 'audiofullscreen'],
+					"audioVolume": "vertical", // just like video player
+					"shuffle": false,
+					"continuous": true,
+					"aspectratio": "16:9"
+				});
 
-<!-- my body from gallery + home ====================================================================   -->
+				// regular video
+				$('video:not(.mep-playlist)').mediaelementplayer({
+					"features": ['playpause', 'current', 'progress', 'duration', 'tracks', 'volume', 'fullscreen'],
+					"aspectratio": "16:9"
+				});
 
-
-
-
-
-
-
- <ul class="tabs">
-    <li><a class="active" href="#BEAT">BEAT<span class="plus1">+</span></a></li> 
-    <li><a href="#LOOPS">LOOPS<span class="plus1">+</span></a></li>
-    <li><a href="#MUSIC">MUSIC<span class="plus1">+</span></a></li>
-  </ul>
- 
- 
-  <ul class="tabs-content clearfix">
- 
-     <!--add vids
-====================================================================   -->  
-   
-    <li class="active clearfix" id="BEAT">
-    
-<div width="100%" >
-  <table>
-	    
- <tr>
-
-  
-  <th>
-
-<div id="cp_widget_2ff733df-da18-4610-afdd-b8a2590cbec6">...</div><script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_2ff733df-da18-4610-afdd-b8a2590cbec6"; cpo["_fid"] = "AAHAPeeglzB2";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script><noscript><span>New Gallery 2019/4/25</span></noscript>
-	    
- </th> <th>
-	    
-	    
-	    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="M658DYAE3UKDG">
-<table width="80">
-<tr><td><input type="hidden" name="on0" value="price option">price option</td></tr><tr><td><select name="os0">
-	<option value="STANDARD LEASE">STANDARD LEASE $9.99 USD</option>
-	<option value="PREMIUM LEASE">PREMIUM LEASE $25.99 USD</option>
-	<option value="PRO LEASE">PRO LEASE $59.99 USD</option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="image" src="https://raw.githubusercontent.com/qmmakau/Headachex.github.io/master/download.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-	 
-	 </th> 
-  </tr>
-</table> 
-   
-
+			});
+		</script>
+			</section>
+			</div>
+			
+		
 	    <!--beat end ================================================================================================================================================ -->
 
-         
-    </li>
-      
     
-   
-  <!-- loops start hare -->
-       
-    
-           <li id="LOOPS" class="clearfix">
+<br> 	<input type="button" > </br>
+        <br>        <input type="button" >  </br>
+        <br>        <input type="button" >  </br>
+        <br>        <input type="button" >  </br>
+        <br>        <input type="button" >  </br>
+        <br>        <input type="button" >  </br>
+
+
+		
+			
+		</div>	
+		</div>
+
+
      
-     
-     
-     
-     
-     
-     
-     
-     
- 
-<!--loops start ================================================================================================================================================ -->
-
-    
-      
-    
-   
-                          <section class="boxfour">  
-                                  <p align="right"><img src="coverm.jpg"</p>
-                         </section>
-                        <div class="clear"></div>
-          
-          
-          
-          
-
-<!--loops end ================================================================================================================================================ -->
-
-               
-                 </li>
-    
-    
-    
-    
-    
-    
-    
-    
-     <!-- music vide -->    
-    <li id="MUSIC" class="clearfix">
-    
-    
-    
-    
-    
-    
- 
-<!--music video start ================================================================================================================================================ -->
-
-   
-    
-    
-  
-          
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/SMnRI0Cx8cA?rel=0" 
-     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-     allowfullscreen></iframe>
-   
-
-<!--music vide ends ================================================================================================================================================ -->
-
-   
-   
-    </li>
-  
-  
-  </ul>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Footer ================================================================================================================================================ -->
+                <!--Footer ================================================================================================================================================ -->
 
 
 
@@ -359,49 +323,9 @@ c.parentNode.insertBefore(cp, c); })(); </script><noscript><span>New Gallery 201
   </div>
   <!-- container ends here --> 
 </div>
-<!-- footer ends here --> 
-<!-- Copyright ==================================================
-================================================== -->
-<div id="copyright">
-  <div class="container">
-    <div class="eleven columns alpha">
-      <p class="copyright">&copy; Copyright 2012. &quot;headache x&quot; by <a href="http://www.headache.tk/" rel="nofollow">Anariel Design</a>. All rights reserved.</p>
-    </div>
-    <div class="five columns omega">
-      <section class="socials">
-        <ul class="socials fr">
-          <li><a href="#"><img src="images/socials/twitter.png" class="poshytip" title="Twitter"  alt="" /></a></li>
-          <li><a href="#"><img src="images/socials/facebook.png" class="poshytip" title="Facebook" alt="" /></a></li>
-          <li><a href="#"><img src="images/socials/google.png" class="poshytip" title="Google" alt="" /></a></li>
-          <li><a href="#"><img src="images/socials/dribbble.png" class="poshytip" title="Dribbble" alt="" /></a></li>
-        </ul>
-      </section>
-    </div>
-  </div>
-  <!-- container ends here --> 
-</div>
-<!-- copyright ends here --> 
-<!-- End Document
-================================================== --> 
-<!-- Scripts ==================================================
-================================================== --> 
-<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script> 
-<!-- Main js files --> 
-<script src="js/screen.js" type="text/javascript"></script> 
-<!-- Tooltip --> 
-<script src="js/poshytip-1.0/src/jquery.poshytip.min.js" type="text/javascript"></script> 
-<!-- Tabs --> 
-<script src="js/tabs.js" type="text/javascript"></script> 
-<!-- Tweets --> 
-<script src="js/jquery.tweetable.js" type="text/javascript"></script> 
-<!-- Include prettyPhoto --> 
-<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script> 
-<!-- Include Superfish --> 
-<script src="js/superfish.js" type="text/javascript"></script> 
-<script src="js/hoverIntent.js" type="text/javascript"></script> 
-<!-- Flexslider --> 
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+<!-- footer ends here -->
 
-</body>
+
+
+	</body>
 </html>

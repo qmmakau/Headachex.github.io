@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MediaElements Playlist</title>
+  
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.10.2/jquery-1.10.2.min.js">
+  </script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/mediaelement/2.13.1/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="mep-feature-playlist.js"></script>
+
+	<!-- jQuery and MediaElement.js -->
+		<script type="text/javascript" src="_demo/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="_demo/mediaelement-and-player.js"></script>
+		<link type="text/css" rel="stylesheet" href="_demo/mediaelementplayer.css">
+
+		<!-- MediaElement Playlist Plugin -->
+		<script type="text/javascript" src="_demo/mediaelement-playlist-plugin.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="_demo/mediaelement-playlist-plugin.min.css">
+
+
+<link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/mediaelement/2.13.1/mediaelementplayer.min.css" />
+<link type="text/css" rel="stylesheet" href="mep-feature-playlist.css" />
+
+<style>
+body{
+    font-family:arial;
+}
+    #mediawrapper{
+
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:30px;
+    width:430px;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .tagline{
+        text-align: center;
+    }
+
+
+</style>
+
+<script>
+    $(function(){
+        $('video,audio').mediaelementplayer({
+                   loop: true,
+        shuffle: true,
+        playlist: true,
+        audioHeight: 30,
+        playlistposition: 'bottom',
+        features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'playlist', 'current', 'progress', 'duration', 'volume'],
+            keyActions: []
+        });
+
+ 
+
+    });
+
+</script>
+
+
+<style id="jsbin-css">
+
+</style>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137688432-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137688432-1');
+</script>
+
+
+
+<!-- Basic Page Needs ================================================== ================================================== -->
+
+<meta charset="utf-">
+<title>Headache X</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="">
+
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- Mobile Specific Metas ================================================== ================================================== -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<!-- CSS ==================================================================================================== -->
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+
+<!-- Favicons ==================================================================================================== -->
+
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- Google Fonts ==================================================================================================== -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="header">
+  <div class="container header"> 
+    <!-- Header | Logo, Menu
+		================================================== -->
+    <header>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+      <div class="mainmenu">
+        <div id="mainmenu">
+          <ul class="sf-menu">
+            <li><a href="index.html" id="visited"><span class="home"><img src="images/home.png" alt="" /></span>Home</a></li>
+            </li>
+            <li><a href="licencing.html" ><span class="home"><img src="images/blog.png" alt="" /></span>licencing</a> </li>
+            <li><a href="producers.html"><span class="home"><img src="images/features.png" alt="" /></span>producers</a></li>
+            <li><a href="contact.html"><span class="producers"><img src="images/contact.png" alt="" /></span>Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Responsive Menu -->
+        
+        <form id="responsive-menu" action="#" method="post">
+          <select>
+            <option value="">Navigation</option>
+            <option value="index.html">Home</option>
+            <option value="licencing.html">licencing</option>
+            <option value="producers.htmll">producers</option>
+            <option value="contact.html">Contact</option>
+          </select>
+        </form>
+      </div>
+    </header>
+  </div>
+</div>
+
+
+  
+    <h1>MediaElement.js Player Plugin</h1>
+    
+        <script>
+    $(function(){
+        $('audio,video').mediaelementplayer({
+            loop: true,
+            shuffle: true,
+            playlist: true,
+            audioHeight: 30,
+            playlistposition: 'bottom',
+            features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'playlist', 'current', 'progress', 'duration', 'volume'],
+        });
+    });
+    </script>
+
+    <div class="tagline">The ultimate plugin of <a href="http://mediaelementjs.com" title="Uh yes, I don't say">mediaelement.js</a></div>
+    <br/> <!-- !sorry if this looks ugly -->
+ 
+    <br/>
+    <div id="mediawrapper">
+
+
+ 	<audio 
+			class="mep-playlist" 
+			data-showplaylist="true" 
+
+			width="500" 
+			height="500" 
+			controls="controls" 
+			preload="auto"
+			>
+                        
+			<source src="https://soundcloud.com/prince-makau/jazz-trap-hip-hop-headachex"                        title="PRIMAVARA by harvestfred"                           data-poster="http://dummyimage.com/600x400/574c0d/e0e0e0&text=PRIMAVARA+by+harvestfred" type="audio/mpeg">
+			<source src="http://https://sampleswap.org/mp3/artist/5101/Peppy--The-Firing-Squad_YMXB-160.mp3"            title="kalamata_3 by life in a box"                        data-poster="http://dummyimage.com/600x400/801a80/e0e0e0&text=kalamata_3 by life in a box" type="audio/mpeg">
+			<source src="http://sampleswap.org/mp3/artist/robbot/robert-meyers_The-Magnificient-Escap-320.mp3" title="The Magnificient Escape 2009 EDIT by robert meyers" data-poster="http://dummyimage.com/600x400/80601b/e0e0e0&text=The+Magnificient+Escape+2009+EDIT+by+robert+meyers" type="audio/mpeg">
+			<source src="http://sampleswap.org/mp3/artist/brettml/Seed-AI_2D-320.mp3"                          title="2D by Seed A.I."                                    data-poster="http://dummyimage.com/600x400/1c1c80/e0e0e0&text=2D+by+Seed+A.I." type="audio/mpeg">
+			<source src="http://sampleswap.org/mp3/artist/Thrystero/Thrystero_Diagonal-320.mp3"                title="Diagonal by Thrystero"                              data-poster="http://dummyimage.com/600x400/741c80/e0e0e0&text=Diagonal+by+Thrystero" type="audio/mpeg">
+			<source src="https://drive.google.com/file/d/1VjJ9Ch6V05LLkLS_W0U68jl1l4Z9gjBe"                    title="Trip To Your Liver by Akcija"                       data-poster="http://dummyimage.com/600x400/1c8028/e0e0e0&text=Trip+To+Your+Liver+by+Akcija" type="audio/mpeg">
+			<source src="https://sampleswap.org/mp3/artist/568484/headachx_cashhhh-tag-160.mp3"                title="cashhhh tag"                                       data-poster="http://dummyimage.com/600x400/27570d/e0e0e0&text=o+More+Ballyhoo+by+Alans+Lounge" type="audio/mpeg">
+                        <source src="https://sampleswap.org/mp3/artist/568484/headachx_cashhhh-tag-160.mp3"                title="cashhhh tag"                                       data-poster="http://dummyimage.com/600x400/27570d/e0e0e0&text=o+More+Ballyhoo+by+Alans+Lounge" type="audio/mpeg">
+                        </audio>
+     
+
+
+    </div>
+
+
+     <a href="https://github.com/jeremejazz/mep-feature-playlist/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+</body>
+</html>
