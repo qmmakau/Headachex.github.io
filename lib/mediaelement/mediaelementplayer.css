@@ -150,7 +150,8 @@
 .mejs-container .mejs-controls {
 	position: center;
 	list-style-type: none;
-	margin: 0;
+	float: top;
+        margin: 0;
 	bottom: 0;
 	left: 0;
 	background: url(background.png);
