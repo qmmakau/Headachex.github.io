@@ -148,7 +148,7 @@
 
 /* Start: CONTROL BAR */
 .mejs-container .mejs-controls {
-	position: absolute;
+	position: center;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;

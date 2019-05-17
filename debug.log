@@ -267,3 +267,4 @@
 [0327/133558.303:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0327/135058.328:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0327/140558.386:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0517/144621.118:ERROR:settings.cc(320)] Settings magic is not 1129342067
