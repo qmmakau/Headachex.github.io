@@ -1,0 +1,4 @@
+baseURL = 'https://mams.com/'
+languageCode = 'en-us'
+title = 'Mams'
+theme = 'newsroom'
